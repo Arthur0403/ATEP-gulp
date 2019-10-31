@@ -1,19 +1,26 @@
 .user-menu {
-	margin-top   : -3px;
-	margin-right : 27px;
-	margin-bottom: 6px;
+	@include flex(row, flex-start);
 
-	@include flex(row, flex-end);
-
-	padding-left : 0;
 	padding-top  : 11px;
+	padding-left : 0;
 
 	list-style   : none;
+
 	background   : #ffffff;
 }
 
 .user-menu__item {
-	margin       : 4px 4px;
+	margin : 7px 4px;
+}
+
+.user-menu__item--search {
+	display : none;
+}
+
+.user-menu__item--search-close {
+	position : relative;
+
+	display  : none;
 }
 
 .user-menu__link {
@@ -23,41 +30,41 @@
 	@include size(20px, 20px);
 
 	.user-menu__icon {
-		transition: all 0.3s ease;
+		transition : all 0.3s ease;
+		transform  : translate(-5px,-2px);
 	}
 
 	&:hover .user-menu__icon,
 	&:focus .user-menu__icon,
 	&:not([href]) .user-menu__icon {
 		transition-delay : .3s;
-		transform        : scale(1.15);
+		transform        : translate(-5px,-2px) scale(1.15);
+	}
+
+	&:active .user-menu__icon {
+		fill   : $main-active;
+		stroke : $main-active;
+	}
+
+	&:active .user-menu__number-purchases {
+		background: $main-active;
 	}
 }
 
-.user-menu__item--search {
-	display     : none;
-}
-
-.user-menu__item--search-close {
-	position    : relative;
-	margin-left : 7px;
-
-	display     : none;
-}
-
 .user-menu__search-close {
-	padding     : 4px;
-	@include size(30px, 30px);
+	display    : block;
 
-	cursor      : pointer;
+	@include size(24px, 24px);
 
-	border      : none;
-	background  : transparent;
+	cursor     : pointer;
+
+	border     : none;
+	background : transparent;
 
 	&::before,
 	&::after {
 		@include pseudo;
-		top        : 12px;
+		top        : 8px;
 		left       : 2px;
 
 		@include size(24px, 1px);
@@ -77,16 +84,16 @@
 	&:hover::after,
 	&:focus::before,
 	&:focus::after {
-		height: 2px;
+		height : 2px;
 	}
 }
 
 .user-menu--toggle {
-	display: block;
+	display : block;
 
 	.user-menu__search-close,
 	.link-search {
-		animation: searchon .5s;
+		animation : searchon .5s;
 	}
 }
 
@@ -94,28 +101,37 @@
 
 	.link-search,
 	.user-menu__search-close {
-		animation: searchoff 1s;
+		animation : searchoff 1s;
 	}
 }
 
+.user-menu__icon {
+	fill   : $main-text-color;
+	stroke : $main-text-color;
+}
+
 @keyframes searchon {
-	0%   {transform: rotateX(90deg);}
-	100% {transform: rotateX(0deg);}
+	0%   {transform: rotateX(90deg);
+	}
+	100% {transform: rotateX(0deg);
+	}
 }
 
 @keyframes searchoff {
-	0%   {transform: rotateX(0deg);}
-	100% {transform: rotateX(90deg);}
+	0%   {transform: rotateX(0deg);
+	}
+	100% {transform: rotateX(90deg);
+	}
 }
 
 .user-menu__item--cart {
-	position: relative;
+	position : relative;
 }
 
 .user-menu__number-purchases {
-	position     : absolute;
-	top          : -2px;
-	right        : -5px;
+	position      : absolute;
+	top           : -5px;
+	right         : 0px;
 
 	@include flex(row, center);
 
@@ -123,72 +139,59 @@
 
 	@include font($accent-font-family, 0.6em, 600, 1.44, #ffffff, #000000);
 
-	border-radius: 50%;
+	border-radius : 50%;
 
-	align-items  : center;
-}
-
-.main-nav__icon {
-	display: block;
+	align-items   : center;
 }
 
 @media (min-width: $desktop) {
 	.user-menu {
-		margin-top: 37px;
+		@include flex(row, flex-end);
+	}
+
+	.user-menu__item {
+		margin : 4px 7px;
+	}
+
+	.user-menu__item--search,
+	.user-menu__item--search-close {
+		margin-right : 12px;
 	}
 
 	.user-menu__link {
-		padding : 4px;
+		padding : 4px 6px 4px 2px;
 		@include size(25px, 25px);
-	}
 
-	.link-search {
-		animation: searchon .5s;
-	}
+		.user-menu__icon {
+			transform : none;
+		}
 
-	.user-menu__item--search-close {
-		position    : relative;
-		margin-left : 7px;
-
-		display     : none;
+		&:hover .user-menu__icon,
+		&:focus .user-menu__icon,
+		&:not([href]) .user-menu__icon {
+			transform : scale(1.15);
+		}
 	}
 
 	.user-menu__search-close {
-		cursor      : pointer;
-		animation   : searchon 1s;
-
-		background  : transparent;
+		@include size(33px, 33px);
 
 		&::before,
 		&::after {
-			@include pseudo;
-			top        : 11px;
-			left       : 1px;
+			top  : 11px;
+			left : 4px;
 
 			@include size(24px, 1px);
-
-			transform  : rotate(45deg) translate(2px, 2px);
-
-			background : #000000;
-		}
-
-		&:after {
-			right     : 0;
-
-			transform : rotate(135deg) translate(2px, -2px);;
-		}
-
-		&:hover::before,
-		&:hover::after,
-		&:focus::before,
-		&:focus::after {
-			height: 2px;
 		}
 	}
 
 	.user-menu__number-purchases {
-		right        : 2px;
+		top : -2px;
 
 		@include size(16px, 16px);
+	}
+
+	.user-menu__icon {
+		@include size(27px, 27px);
 	}
 }

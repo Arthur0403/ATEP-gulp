@@ -23,7 +23,7 @@ body {
 .logo__link {
 	display         : block;
 
-	padding         : 8px 8px 4px;
+	padding         : 8px 8px 4px 0;
 
 	@include font(Baskerville Old Face, 2em, normal, 1, #000000, transparent);
 
@@ -41,8 +41,9 @@ body {
 
 	&::after {
 		@include pseudo;
-		bottom        : 12.5px;
-		left          : 84px;
+
+		left: 75px;
+		bottom: 8px;
 
 		@include size (6px, 6px);
 
@@ -140,10 +141,10 @@ body {
 	&::before,
 	&::after {
 		@include pseudo;
-		left             : 10px;
+		left             : 14px;
 		bottom           : 1px;
 
-		@include size(8px, 0.1em);
+		@include size(7px, 0.1em);
 
 		transition-delay : .7s;
 		transform        : rotate(45deg);
@@ -152,7 +153,7 @@ body {
 	}
 
 	&::after {
-		left     : 15px;
+		left     : 18px;
 
 		transform : rotate(-45deg);
 	}

@@ -47,12 +47,12 @@ mixin icon(classNameA,nameIcon,srcIcon)
 			a(class='user-menu__link '+classNameA)
 				span.visually-hidden= nameIcon
 				svg.user-menu__icon(width='25' height='25')
-					use(xlink:href='img/sprite.svg#' + srcIcon + '')
+					use(xlink:href='img/wx3/sprite.svg#' + srcIcon + '')
 mixin iconLink(classNameA,linkIcon,nameIcon,srcIcon)
 	a(class='user-menu__link '+classNameA href=linkIcon)
 		span.visually-hidden= nameIcon
 		svg.user-menu__icon(width='25' height='25')
-			use(xlink:href='img/sprite.svg#' + srcIcon + '')
+			use(xlink:href='img/wx3/sprite.svg#' + srcIcon + '')
 
 mixin logoItem
 	.logo
