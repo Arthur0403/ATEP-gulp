@@ -1,7 +1,29 @@
 .header {
+	position   : relative;
 	z-index    : z('header');
 
 	background : $main-background;
+}
+
+.header--show {
+	position : sticky;
+	top      : 0;
+
+	animation : headerShow 1s;
+}
+
+@keyframes headerShow {
+	0%   {transform: translateY(-100%);
+	}
+	100% {transform: translateY(0%);
+	}
+}
+
+@keyframes headerClose {
+	0%   {transform: translateY(0%);
+	}
+	100% {transform: translateY(-100%);
+	}
 }
 
 .header__accessible:focus {
@@ -11,33 +33,49 @@
 
 .header__wrapper {
 	@include flex(row, space-between);
-	flex-wrap   : wrap;
-	align-items : flex-start;
 
 	min-height  : 48px;
+
+	flex-wrap   : wrap;
+	align-items : flex-start;
 }
 
 .header__item {
-	padding   : 5px 0 0;
-	flex-grow : 1;
+	padding     : 5px 0 0;
 }
 
 .header__item--logo {
 	z-index    : 2;
-	background : $main-background;
 }
 
 .header__item--user-menu {
+	z-index     : 2;
+
 	margin      : 0;
 	margin-left : auto;
-
-	z-index     : 2;
-	background  : $main-background;
 }
 
 .header__accessible:focus {
 	top  : 15px;
 	left : 265px;
+}
+
+.header__mobile-background {
+	display: none;
+}
+
+@media (max-width: $desktop - 1) {
+
+	.header__mobile-background {
+		display    : block;
+		@include size(100vw, 54px);
+		background : $main-background;
+		position   : absolute;
+		top        : 0;
+		left       : 0;
+		z-index    : 1;
+		box-shadow : 0 0 6px #000000;
+	}
 }
 
 @media (min-width: $desktop) {
@@ -95,20 +133,6 @@
 		height    : 133px;
 
 		animation : headerClose .7s;
-	}
-
-	@keyframes headerShow {
-		0%   {transform: translateY(-88px);
-		}
-		100% {transform: translateY(0px);
-		}
-	}
-
-	@keyframes headerClose {
-		0%   {transform: translateY(0px);
-		}
-		100% {transform: translateY(-88px);
-		}
 	}
 
 	@keyframes shadow {

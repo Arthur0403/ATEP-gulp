@@ -1,0 +1,24 @@
+
+<section class="modal">
+  <picture class="modal__article-photo">
+    <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/modal-favorites_desk.webp 1x, img/wx2/modal-favorites_desk.webp 2x, img/wx3/modal-favorites_desk.webp 3x"/>
+    <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/modal-favorites_tab.webp 1x, img/wx2/modal-favorites_tab.webp 2x, img/wx3/modal-favorites_tab.webp 3x"/>
+    <source type="image/webp" srcset="img/wx1/modal-favorites_mob.webp 1x, img/wx2/modal-favorites_mob.webp 2x, img/wx3/modal-favorites_mob.webp 3x"/>
+    <source media="(min-width: 1220px)" srcset="img/modal-favorites_desk.jpg"/>
+    <source media="(min-width: 768px)" srcset="img/modal-favorites_tab.jpg"/><img class="image" src="img/modal-favorites_mob.jpg"/>
+  </picture>
+  <form class="modal__form modal__form--favorites-login" action="" method="post" name="login-form">
+    <h3 class="modal__title">Вход</h3>
+    <label class="modal__label visually-hidden" for="login-email">Введите email</label>
+    <input class="modal__input" id="login-email" type="email" name="login" placeholder="Email" required=""/>
+    <label class="modal__label visually-hidden" for="login-password">Введите пароль</label>
+    <input class="modal__input" id="login-password" name="pasword" type="password" pattern="(?=.*d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" required=""/>
+    <div class="modal__input modal__input--captcha g-recaptcha" id="recaptcha" data-sitekey="6LeBMLQUAAAAAMpIkzxAeI6yHx-dgA7k6XZaSZ2U"></div>
+    <div class="modal__label modal__label--captchaError"></div>
+    <div class="modal__buttons">
+      <div class="modal__button-group">
+        <input class="modal__button modal__button--login form-button" id="submit-login" type="submit" name="submit_login-login" value="Войти"/><a class="modal__link link-recovery" href="recovery-password.html">Забыли пароль?</a>
+      </div><span>или</span><a class="modal__button form-button" href="#">Подписаться</a>
+    </div>
+  </form>
+</section>

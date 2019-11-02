@@ -16,6 +16,10 @@ body {
 	box-shadow: none;
 }
 
+.header .focus {
+	z-index : z('focus-header');
+}
+
 .main-wrapper {
 	padding: 0 5.8%;
 }
@@ -25,7 +29,7 @@ body {
 
 	padding         : 8px 8px 4px 0;
 
-	@include font(Baskerville Old Face, 2em, normal, 1, #000000, transparent);
+	@include font($logo-font-family, 2em, normal, 1, #000000, transparent);
 
 	text-decoration : none;
 	letter-spacing  : 0.7px;

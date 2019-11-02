@@ -12,6 +12,7 @@
 
 .main-nav > ul {
 	position       : absolute;
+	z-index        : z('main-nav-ul');
 
 	@include flex(column, space-between);
 
@@ -21,17 +22,10 @@
 
 	list-style     : none;
 
-	transition     : .7s;
 	transform      : translate(-5.8%, -110%);
+	animation      : mainNav .7s linear;
 
 	background     : $main-background;
-}
-
-.main-nav--show > ul {
-	position   : absolute;
-
-	transition : .7s;
-	transform  : translate(-5.8%, 0);
 }
 
 .main-nav__item {
@@ -125,9 +119,11 @@
 }
 
 .main-nav__submenu-wrapper {
-	overflow : hidden;
+	overflow   : hidden;
 
-	height   : 0;
+	height     : 0;
+
+	background : $main-background;
 }
 
 .main-nav__submenu--show {
@@ -185,7 +181,7 @@
 
 .main-nav__buttons {
 	position   : absolute;
-	top        : 2px;
+	top        : 1px;
 	right      : 5.8%;
 	z-index    : 20;
 
@@ -250,6 +246,33 @@
 	}
 }
 
+@media (max-width: $desktop - 1) {
+
+	.main-nav--show > ul {
+		transition     : .7s;
+	}
+
+	.main-nav--show > ul {
+		position   : absolute;
+		z-index    : z('main-nav-ul');
+
+		animation  : mainNavShow .7s linear;
+		transform  : translate(-5.8%, 0);
+
+		box-shadow : 0 0 6px #000000;
+	}
+
+	@keyframes mainNav {
+		0%   {transform: translate(-5.8%, 0%);}
+		100% {transform: translate(-5.8%, -110%);}
+	}
+
+	@keyframes mainNavShow {
+		0%   {transform: translate(-5.8%, -110%);}
+		100% {transform: translate(-5.8%, 0%);}
+	}
+}
+
 @media (min-width: $desktop) {
 
 	.main-nav {
@@ -265,6 +288,7 @@
 
 	.main-nav > ul {
 		position  : static;
+		z-index   : auto;
 
 		@include flex(row, space-between);
 

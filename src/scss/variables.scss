@@ -75,12 +75,14 @@ $button-shadow: 0 0 5px 3px rgba($main-text-color, 0.3);
 
 $z-indexes: (
 	'accessible'                : -9999,
+	'focus-header'              : 1020,
+	'header'                    : 1000,
 	'focus'                     : 999,
+	'main-nav-ul'               : -5,
 	'main-nav__submenu-wrapper' : 19,
 	'main-nav__submenu'         : 20,
 	'modal'                     : 30,
 	'modal-wrapper'             : 25,
-	'header'                    : 24,
 	'header-after'              : 23,
 	'modal-search__button'      : 1000,
 	'header--show'              : 3,

@@ -21,30 +21,30 @@
 }
 
 .modal__title {
-	position      : relative;
+	position       : relative;
 
-	margin        : 0 0 28px;
-	padding       : 0 0 13px;
+	margin         : 0 0 28px;
+	padding        : 0 0 13px;
 
 	@include font($main-font-family, 1.333em, bold, 1.35, $modal-text-color, transparent);
 
-	text-align    : center;
-	text-transform: uppercase;
+	text-align     : center;
+	text-transform : uppercase;
 
 	&::after {
 		@include pseudo;
-		right     : 30px;
-		bottom    : 0;
-		left      : 30px;
+		right      : 30px;
+		bottom     : 0;
+		left       : 30px;
 
-		height    : 0.9px;
+		height     : 0.9px;
 
-		background: $modal-text-color;
+		background : $modal-text-color;
 	}
 }
 
 .modal__title--recovery {
-	margin: 0 0 10px;
+	margin : 0 0 10px;
 }
 
 .modal__label {
@@ -52,9 +52,9 @@
 }
 
 .modal__text {
-	margin : 3px 0;
-	padding: 0;
-	width  : 344px;
+	margin  : 3px 0;
+	padding : 0;
+	width   : 344px;
 
 	@include font($main-font-family, 0.733em, bold, 1.35, $modal-text-second-color, transparent);
 }
@@ -73,51 +73,51 @@
 	border-radius : 5px;
 
 	&::placeholder {
-		color: $input-text-color;
+		color : $input-text-color;
 	}
 
 	&:valid {
-		background: $main-background;
-		box-shadow: inset 0 0 0 2px #1DE17A;
+		background : $main-background;
+		box-shadow : inset 0 0 0 2px #1DE17A;
 	}
 }
 
 .modal__input--recovery {
-	margin-bottom: 0;
+	margin-bottom : 0;
 }
 
 .modal__input--captcha {
-	position  : relative;
+	position   : relative;
 
-	overflow  : hidden;
+	overflow   : hidden;
 
-	margin-top: 4px;
-	padding   : 0;
-	width     : 280px;
-	height    : 49px;
+	margin-top : 4px;
+	padding    : 0;
+	width      : 280px;
+	height     : 49px;
 
-	align-self: center;
+	align-self : center;
 
 	&::before {
 		@include pseudo;
-		z-index        : 2;
+		z-index         : 2;
 
 		@include size(100%, 100%)
 
-		background     : #ffffff url(../img/recaptcha.jpg) no-repeat;
-		background-size: contain;
+		background      : #ffffff url(../img/recaptcha.jpg) no-repeat;
+		background-size : contain;
 	}
 }
 
 .modal__buttons {
 	@include flex(row, space-between);
 
-	margin-top : 5px;
+	margin-top  : 5px;
 
-	align-items: flex-start;
+	align-items : flex-start;
 
 	span {
-		margin: 15px 10px;
+		margin : 15px 10px;
 
 		@include font($main-font-family, 1.2em, 500, 1.33, #000000, transparent);
 	}
@@ -150,21 +150,21 @@
 
 	&:hover,
 	&:focus {
-		border-color: #111111;
-		background  : #111111;
+		border-color : #111111;
+		background   : #111111;
 	}
 }
 
 .modal__button--recovery {
-	padding    : 6px 18px;
-	width      : 160px;
+	padding     : 6px 18px;
+	width       : 160px;
 
-	line-height: 1.31;
+	line-height : 1.31;
 
-	white-space: pre-line;
+	white-space : pre-line;
 
 	&:first-child {
-		margin-right: 25px;
+		margin-right : 25px;
 	}
 }
 
@@ -182,110 +182,110 @@
 
 	&::before {
 		@include pseudo;
-		bottom    : 0;
-		left      : 0;
+		bottom     : 0;
+		left       : 0;
 
 		@include size(0, 1px);
 
-		transition: all 300ms ease;
+		transition : all 300ms ease;
 
-		background: $modal-text-second-color;
+		background : $modal-text-second-color;
 	}
 
 	&:hover {
-		font-weight: 700;
+		font-weight : 700;
 
 		&::before {
-			width: 100%;
+			width : 100%;
 		}
 	}
 }
 
 
 .modal__article-photo {
-	display: none;
+	display : none;
 }
 
 .modal--favorites-login {
-	top    : 42%;
+	top     : 42%;
 
 	@include flex(row, space-between, none);
 
-	padding: 37px 30px;
+	padding : 37px 30px;
 
 	.modal__article-photo {
-		display      : block;
-		overflow     : hidden;
+		display       : block;
+		overflow      : hidden;
 
-		margin-top   : 19px;
+		margin-top    : 19px;
 		@include size(207px, 273px);
 
-		border-radius: 10px;
+		border-radius : 10px;
 	}
 }
 
 .modal__form--favorites-login {
-	width: 344px;
+	width : 344px;
 }
 
 .modal--show {
-	display: flex;
+	display : flex;
 }
 
 .modal--page {
-	position      : relative;
-	top           : 0;
-	left          : 0;
-	z-index       : 0;
+	position       : relative;
+	top            : 0;
+	left           : 0;
+	z-index        : 0;
 
-	display       : flex;
+	display        : flex;
 
-	margin        : 0 auto;
-	padding-bottom: 100px;
+	margin         : 0 auto;
+	padding-bottom : 100px;
 
-	transform     : translate(0, 0);
+	transform      : translate(0, 0);
 
-	border-top    : 1px solid $main-text-color;
-	border-radius : 0;
+	border-top     : 1px solid $main-text-color;
+	border-radius  : 0;
 }
 
 .modal__title--page {
-	color: $modal-page-text-color;
+	color : $modal-page-text-color;
 
 	&.modal__title--recovery {
-		margin-bottom: 30px;
+		margin-bottom : 30px;
 	}
 
 	&:after {
-		background: $modal-page-text-color;
+		background : $modal-page-text-color;
 	}
 }
 
 .modal__input--page {
-	margin-bottom: 20px;
+	margin-bottom : 20px;
 
-	border       : 1px solid $border-form-color;
+	border        : 1px solid $border-form-color;
 }
 
 .modal__button--page {
-	color       : $main-text-color;
+	color        : $main-text-color;
 
-	border-color: $main-text-color;
-	background  : $main-background;
+	border-color : $main-text-color;
+	background   : $main-background;
 
 	&.modal__button--recovery {
-		margin-top: 20px;
+		margin-top : 20px;
 	}
 
 	&:hover,
 	&:focus {
-		color       : $main-background;
+		color        : $main-background;
 
-		border-color: $main-text-color;
-		background  : $main-text-color;
+		border-color : $main-text-color;
+		background   : $main-text-color;
 	}
 }
 
 .modal__article-photo--page {
-	margin-top: 52px;
+	margin-top : 52px;
 }

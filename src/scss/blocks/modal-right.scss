@@ -1,11 +1,11 @@
 .modal-right {
 	position   : fixed;
-	display    : none;
 	top        : 0;
 	right      : 0;
 	z-index    : z('modal');
 
 	@include flex(column, flex-start, none);
+	display    : none;
 
 	padding    : 133px 60px 30px;
 	@include size(525-60-60px, 100vh);
@@ -17,24 +17,30 @@
 
 	&.modal--show {
 		display   : flex;
-		animation : rightOpen .7s linear;
+
 		transform : translateX(0%);
+		animation : rightOpen .7s linear;
 	}
 
 	&.modal--close {
 		display   : flex;
+
 		animation : rightclose .7s linear;
 	}
 }
 
 @keyframes rightOpen {
-	0%   {transform  : translateX(100%);}
-	100% {transform  : translateX(0%);}
+	0%   {transform  : translateX(100%);
+	}
+	100% {transform  : translateX(0%);
+	}
 }
 
 @keyframes rightClose {
-	0%   {transform  : translateX(0%);}
-	100% {transform  : translateX(100%);}
+	0%   {transform  : translateX(0%);
+	}
+	100% {transform  : translateX(100%);
+	}
 }
 
 .modal-right__title {
@@ -214,36 +220,40 @@
 }
 
 .modal-right__title--cart {
-	margin: 4px 0 23px;
+	margin : 4px 0 23px;
 }
 
 .modal-right--cart {
 	.modal-right__text:first-of-type {
-		margin: auto 0 0;
+		margin : auto 0 0;
 	}
 	.modal-right__text:last-child {
-		margin: 0;
+		margin : 0;
 	}
 }
 
 .modal-right__amount-payable--toggle {
-	display: none;
+	display : none;
 }
 
 .modal-right__amount-payable {
+	margin : 15px 0;
+
 	@include font($accent-font-family, 1.2em, normal, 1.33, $main-text-color, transparent);
-	margin: 15px 0;
 }
 
 .modal-right__button-cart {
-	width      : 348px;
-	padding    : 17px;
-	text-align : center;
-	border     : none;
 	margin     : 0 auto 10px;
-	@include font($accent-font-family, 1.2em, normal, 1.50, $main-text-color, $main-background);
-	box-shadow : 1px 1px 1px #dddddd;
+	padding    : 17px;
 	box-sizing : border-box;
+	width      : 348px;
+
+	@include font($accent-font-family, 1.2em, normal, 1.50, $main-text-color, $main-background);
+
+	text-align : center;
+
+	border     : none;
+	box-shadow : 1px 1px 1px #dddddd;
 }
 
 .modal-right__button-cart:first-of-type {
@@ -267,17 +277,17 @@
 }
 
 .modal-right__title--page {
-	text-align: center;
+	text-align : center;
 }
 
 .modal-right__item--page {
-	margin: 0 auto 14px;
+	margin : 0 auto 14px;
 }
 
 .modal-right__close--page {
-	display: none;
+	display : none;
 }
 
 .modal-right__button--page {
-	margin: 20px auto 0;
+	margin : 20px auto 0;
 }

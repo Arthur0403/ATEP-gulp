@@ -1,0 +1,19 @@
+
+<section class="modal modal--page" id="main-content">
+  <form class="modal__form modal__form--page" action="" method="post" name="login-form">
+    <h3 class="modal__title modal__title--page">Вход</h3>
+    <label class="modal__label">
+      <input class="modal__input modal__input--page" id="email" type="email" name="login" placeholder="Email" required=""/>
+    </label>
+    <label class="modal__label">
+      <input class="modal__input modal__input--page" name="pasword" type="password" pattern="”(?=.*d)(?=.*[a-z])(?=.*[A-Z]).{8,}”" placeholder="Password" required=""/>
+    </label>
+    <div class="modal__input modal__input--page modal__input--captcha g-recaptcha" id="recaptcha" data-sitekey="6LeBMLQUAAAAAMpIkzxAeI6yHx-dgA7k6XZaSZ2U"></div>
+    <div class="modal__label modal__label--captchaError"></div>
+    <div class="modal__buttons">
+      <div class="modal__button-group">
+        <input class="modal__button modal__button--page modal__button--login form-button" id="submit-login-login" type="submit" name="submit_login-login" value="Войти"/><a class="modal__link link-recovery" href="recovery-password.html">Забыли пароль?</a>
+      </div><span>или</span><a class="modal__button modal__button--page form-button" href="#">Подписаться</a>
+    </div>
+  </form>
+</section>
