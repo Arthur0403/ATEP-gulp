@@ -1,0 +1,156 @@
+.good_margin {
+	margin-right: 3%;
+	margin-left: 7%;
+}
+
+.good_card {
+	display: grid;
+	grid-template-columns: 1.33fr 1fr;
+	grid-column-gap: 30px;
+	margin-bottom: 65px;
+
+	&__pic_wrap {
+		display: inline-grid;
+		grid-template-columns: 1fr 3fr;
+		grid-auto-rows: min-content;
+		grid-column-gap: 1em;
+		grid-row-gap: 1em;
+
+		.good_card__pic {
+			display: inline-grid;
+		}
+
+		.good_card__pic_small {
+			width: 100%;
+		}
+
+		.good_card__pic_big {
+			width: 100%;
+			grid-column: 2 / 5;
+			grid-row: 1 / 4;
+		}
+	}
+
+	&__description {
+		display: inline-block;
+
+		.title_price {
+			@include flex(row, space-between);
+			align-items: center;
+
+			.good_card__title,
+			.good_card__price {
+				display: inline-block;
+
+				@include font($main-font-family, 22px, normal, 29px, $main-text-color, $main-background);
+			}
+
+			.good_card__title {
+				font-weight: bold;
+			}
+
+			.good_card__price {
+				color: $active-text-color;
+			}
+		}
+
+		.good_card__text {
+			@include font($main-font-family, 19px, normal, 25px, $main-text-color, $main-background);
+		}
+
+			.good_card__choose_txt {
+				@include font($main-font-family, 17px, normal, 23px, #8E8E8E, $main-background);
+			}
+
+			.good_card__colors,
+			.good_card__sizes {
+				margin: 10px 0 10px;
+			}
+
+			.good_card__colors {
+				.good_card__color {
+					margin: 0 3px 0 3px;
+					border-radius: 50%;
+
+					&:hover {
+						border: 1px solid #000;
+					}
+				}
+
+				.color_red {
+					background-color: #FF0000;
+				}
+				.color_purple {
+					background-color: #B3A7FF;
+				}
+				.color_pink {
+					background-color: #FFC9C9;
+				}
+				.color_orange {
+					background-color: #FFA800;
+				}
+			}
+
+				.good_card__color,
+				.good_card__size {
+					display: inline-block;
+					@include size(22px, 22px);
+					cursor: pointer;
+					border: 1px solid rgba(#000,0);
+				}
+
+				.good_card__size {
+					padding: 0 3px 0 3px;
+
+					background-color: $main-background;
+
+					box-sizing: content-box;
+
+					@include font($main-font-family, 17px, normal, 23px, $main-text-color, $main-background);
+					text-align: center;
+					text-transform: uppercase;
+
+					&:hover {
+						border: 1px solid #000;
+					}
+				}
+
+		.good_card__order {
+			margin-top: 20px;
+			padding-top: 25px;
+			border-top: 1px solid #C8C8C8;
+
+			.order_btn {
+				margin: 5px;
+				border: 1px solid #000;
+
+				background-color: $main-background;
+
+				box-sizing: content-box;
+
+				&:hover {
+					background-color: $second-background;
+				}
+			}
+
+			.btn_basket {
+				padding: 5px 40px 10px;
+
+				@include font($main-font-family, 22px, normal, 29px, $main-text-color, $main-background);
+				text-align: center;
+
+				cursor: pointer;
+			}
+
+			.btn_favorite {
+				padding: 0 15px 12px 12px;
+
+				svg {
+					fill: none;
+					stroke: #000;
+					stroke-width: 2px;
+				}
+			}
+		}
+	}
+}

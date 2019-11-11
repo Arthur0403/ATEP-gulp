@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Cathalog</title>
+    <title>Good</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://www.google.com/recaptcha/api.js"></script>
@@ -22,7 +22,7 @@
           <ul>
             <li class="main-nav__item"><a class="main-nav__link" aria-label="Главная" href="index.html"><span>Г</span><span>л</span><span>а</span><span>в</span><span>н</span><span>а</span><span>я</span></a>
             </li>
-            <li class="main-nav__item main-nav__item--submenu"><span class="main-nav__submenu--mobile link-her arrow"></span><a class="main-nav__link" aria-label="Для нее"><span>Д</span><span>л</span><span>я</span><span> </span><span>н</span><span>е</span><span>е</span></a>
+            <li class="main-nav__item main-nav__item--submenu"><span class="main-nav__submenu--mobile link-her arrow"></span><a class="main-nav__link" aria-label="Для нее" href="cathalog.html"><span>Д</span><span>л</span><span>я</span><span> </span><span>н</span><span>е</span><span>е</span><span class="arrow"></span></a>
               <div class="main-nav__submenu-wrapper main-nav__submenu-wrapper--her">
                 <div class="main-nav__submenu"><a class="accessible main-nav__submenu__accessible" href="#for-him">Перейти к товарам для него</a>
                   <ul class="main-nav__column">
@@ -70,7 +70,7 @@
                 </div>
               </div>
             </li>
-            <li class="main-nav__item main-nav__item--submenu"><span class="main-nav__submenu--mobile link-him arrow"></span><a class="main-nav__link" id="for-him" aria-label="Для него"><span>Д</span><span>л</span><span>я</span><span> </span><span>н</span><span>е</span><span>г</span><span>о</span></a>
+            <li class="main-nav__item main-nav__item--submenu"><span class="main-nav__submenu--mobile link-him arrow"></span><a class="main-nav__link" id="for-him" aria-label="Для него" href="cathalog.html"><span>Д</span><span>л</span><span>я</span><span> </span><span>н</span><span>е</span><span>г</span><span>о</span><span class="arrow"></span></a>
               <div class="main-nav__submenu-wrapper main-nav__submenu-wrapper--him">
                 <div class="main-nav__submenu"><a class="accessible main-nav__submenu__accessible" href="#lookbook">Перейти к Lookbook</a>
                   <ul class="main-nav__column">
@@ -152,171 +152,192 @@
       </div>
     </header>
     <div class="header__shadow"></div>
-    <div class="main-wrapper">
-      <div class="cathegory-nav">
-        <nav class="cathegory-nav__content">
-          <ul class="cathegory-nav__flex-container">
-            <li class="cathegory-nav__item"><a class="cathegory-nav__link cathegory-nav__link_active" href="#">Все</a></li>
-            <li class="cathegory-nav__item cathegory-nav__item--submenu"><a class="cathegory-nav__link" href="#">Одежда</a>
-              <div class="submenu">
-                <ul class="submenu-list">
-                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Платья</a></li>
-                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Блузки</a></li>
-                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Футболки</a></li>
-                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Брюки</a></li>
-                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Юбки</a></li>
-                </ul>
+    <main class="main-content">
+      <section class="good_card good_margin">
+        <div class="good_card__pic_wrap"><img class="good_card__pic good_card__pic_small" src="img/wx1/image3.1_desk.webp"><img class="good_card__pic good_card__pic_small" src="img/wx1/image3.1_desk.webp"><img class="good_card__pic good_card__pic_small" src="img/wx1/image3.1_desk.webp"><img class="good_card__pic good_card__pic_big" src="img/wx2/image3.1_desk.webp"></div>
+        <div class="good_card__description">
+          <div class="title_price">
+            <h1 class="good_card__title">Gold Plated Desk Lantern Lamp</h1><span class="good_card__price">$112.00</span>
+          </div>
+          <div class="good_card__rating"></div>
+          <svg width="18" height="18">
+            <use xlink:href="img/star.svg#icon-rating"></use>
+          </svg>
+          <svg width="18" height="18">
+            <use xlink:href="img/star.svg#icon-rating"></use>
+          </svg>
+          <svg width="18" height="18">
+            <use xlink:href="img/star.svg#icon-rating"></use>
+          </svg>
+          <svg width="18" height="18">
+            <use xlink:href="img/star.svg#icon-rating"></use>
+          </svg>
+          <svg width="18" height="18">
+            <use xlink:href="img/star.svg#icon-rating_none"></use>
+          </svg>
+          <p class="good_card__text">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.</p>
+          <div class="good_card__choose_color"><span class="good_card__choose_txt">Выбрать цвет</span>
+            <div class="good_card__colors">
+              <button class="good_card__color color_red"></button>
+              <button class="good_card__color color_purple"></button>
+              <button class="good_card__color color_pink"></button>
+              <button class="good_card__color color_orange"></button>
+            </div>
+          </div>
+          <div class="good_card__choose_size"><span class="good_card__choose_txt">Выбрать размер</span>
+            <div class="good_card__sizes">
+              <button class="good_card__size size_xs">xs</button>
+              <button class="good_card__size size_s">s</button>
+              <button class="good_card__size size_m">m</button>
+              <button class="good_card__size size_l">l</button>
+            </div>
+          </div>
+          <div class="good_card__order">
+            <button class="order_btn btn_basket">В корзину</button>
+            <button class="order_btn btn_favorite">
+              <svg width="25" height="28" viewBox="-2 -6 25 25">
+                <use xlink:href="img/sprite.svg#icon-favorites"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="good_info good_margin">
+        <div class="good_info__btns">
+          <button class="active good_info__btn" data-tab="0">Описание</button>
+          <button class="good_info__btn" data-tab="1">Комментарии</button>
+          <button class="good_info__btn" data-tab="2">Оставить комментарий</button>
+        </div>
+        <div class="good_info__content">
+          <div class="good_info__details tab-block">
+            <h2 class="good_info__title">Details</h2>
+            <p class="good_info__txt">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis noexercit ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.
+              
+            </p>
+            <h2 class="good_info__title">Features</h2>
+            <p class="good_info__txt">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              <br>
+              Irure dolor in reprehenderit in voluptate velit esse
+              <br>
+              Sed do eiusmod tempor incididunt ut labore et
+              <br>
+              Nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="good_info__review_wrap tab-block">
+            <div class="good_info__review"><img class="review_avatar" src="../img/review_avatar.svg">
+              <div class="review_rating">
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating_none"></use>
+                </svg>
               </div>
-            </li>
-            <li class="cathegory-nav__item cathegory-nav__item--submenu"><a class="cathegory-nav__link" href="#">Обувь</a>
-              <div class="submenu">
-                <ul class="submenu-list">
-                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Кроссовки</a></li>
-                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Кеды</a></li>
-                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Туфли</a></li>
-                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Балетки</a></li>
-                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Сланцы</a></li>
-                </ul>
+              <p class="review_txt">
+                Praesent volutpat ut nisl in hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Etiam porttitor, lacus in luctus molestie
+                
+              </p><span class="review_name">Roche Petite - Fashion Designer</span>
+            </div>
+            <div class="good_info__review"><img class="review_avatar" src="../img/review_avatar.svg">
+              <div class="review_rating">
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating_none"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating_none"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating_none"></use>
+                </svg>
               </div>
-            </li>
-            <li class="cathegory-nav__item cathegory-nav__item--submenu"><a class="cathegory-nav__link" href="#">Аксессуары</a>
-              <div class="submenu">
-                <ul class="submenu-list">
-                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Часы</a></li>
-                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Серьги</a></li>
-                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Кольца</a></li>
-                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Ожерелье</a></li>
-                  <li class="submenu-list__item"><a class="submenu-list__link" href="#">Поло</a></li>
-                </ul>
+              <p class="review_txt">
+                Praesent volutpat ut nisl in hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Etiam porttitor, lacus in luctus molestie
+                
+              </p><span class="review_name">Roche Petite - Fashion Designer</span>
+            </div>
+            <div class="good_info__review"><img class="review_avatar" src="../img/review_avatar.svg">
+              <div class="review_rating">
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
               </div>
-            </li>
-            <li class="cathegory-nav__item cathegory-nav__item--new"><a class="cathegory-nav__link" href="#">Новикнки</a></li>
-          </ul>
-        </nav>
-      </div>
-      <main class="cathalog">
-        <ul class="cathalog-list">
-          <li class="cathalog-item">
-            <div class="cathalog-item__pink-hue"><a class="cathalog-item__link-button" href="#">View</a>
+              <p class="review_txt">
+                Praesent volutpat ut nisl in hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Etiam porttitor, lacus in luctus molestie
+                
+              </p><span class="review_name">Roche Petite - Fashion Designer</span>
             </div>
-                  <picture class="cathalog-item__img">
-                    <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image2_desk.webp 1x, img/wx2/image2_desk.webp 2x, img/wx3/image2_desk.webp 3x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image2_tab.webp 1x, img/wx2/image2_tab.webp 2x, img/wx3/image2_tab.webp 3x">
-                    <source type="image/webp" srcset="img/wx1/image2_mob.webp 1x, img/wx2/image2_mob.webp 2x, img/wx3/image2_mob.webp 3x">
-                    <source media="(min-width: 1220px)" srcset="img/image2_desk.jpg">
-                    <source media="(min-width: 768px)" srcset="img/image2_tab.jpg"><img class="image" src="img/image2_mob.jpg">
-                  </picture>
-            <h3 class="cathalog-item__title">Simple white clock</h3>
-            <p class="cathalog-item__price">$25.00</p><a class="cathalog-item__link-feedback" href="#">Оставить отзыв</a>
-          </li>
-          <li class="cathalog-item">
-            <div class="cathalog-item__pink-hue"><a class="cathalog-item__link-button" href="#">View</a>
+          </div>
+          <div class="good_info__form_wrap tab-block">
+            <p class="good_info__form_txt">
+              Be the first to review “Gold Plated Desk Lantern Lamp”
+              <br>
+              Your E-mail Address Will not be published. Required field are marked *
+            </p><span class="good_info__form_txt">Your rating</span>
+            <div class="form__rating">
+                      <svg width="18" height="18">
+                        <use xlink:href="img/star.svg#icon-rating"></use>
+                      </svg>
+                      <svg width="18" height="18">
+                        <use xlink:href="img/star.svg#icon-rating"></use>
+                      </svg>
+                      <svg width="18" height="18">
+                        <use xlink:href="img/star.svg#icon-rating"></use>
+                      </svg>
+                      <svg width="18" height="18">
+                        <use xlink:href="img/star.svg#icon-rating"></use>
+                      </svg>
+                      <svg width="18" height="18">
+                        <use xlink:href="img/star.svg#icon-rating_none"></use>
+                      </svg>
             </div>
-                  <picture class="cathalog-item__img">
-                    <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image2_desk.webp 1x, img/wx2/image2_desk.webp 2x, img/wx3/image2_desk.webp 3x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image2_tab.webp 1x, img/wx2/image2_tab.webp 2x, img/wx3/image2_tab.webp 3x">
-                    <source type="image/webp" srcset="img/wx1/image2_mob.webp 1x, img/wx2/image2_mob.webp 2x, img/wx3/image2_mob.webp 3x">
-                    <source media="(min-width: 1220px)" srcset="img/image2_desk.jpg">
-                    <source media="(min-width: 768px)" srcset="img/image2_tab.jpg"><img class="image" src="img/image2_mob.jpg">
-                  </picture>
-            <h3 class="cathalog-item__title">Simple white clock</h3>
-            <p class="cathalog-item__price">$25.00</p><a class="cathalog-item__link-feedback" href="#">Оставить отзыв</a>
-          </li>
-          <li class="cathalog-item">
-            <div class="cathalog-item__pink-hue"><a class="cathalog-item__link-button" href="#">View</a>
-            </div>
-                  <picture class="cathalog-item__img">
-                    <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image2_desk.webp 1x, img/wx2/image2_desk.webp 2x, img/wx3/image2_desk.webp 3x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image2_tab.webp 1x, img/wx2/image2_tab.webp 2x, img/wx3/image2_tab.webp 3x">
-                    <source type="image/webp" srcset="img/wx1/image2_mob.webp 1x, img/wx2/image2_mob.webp 2x, img/wx3/image2_mob.webp 3x">
-                    <source media="(min-width: 1220px)" srcset="img/image2_desk.jpg">
-                    <source media="(min-width: 768px)" srcset="img/image2_tab.jpg"><img class="image" src="img/image2_mob.jpg">
-                  </picture>
-            <h3 class="cathalog-item__title">Simple white clock</h3>
-            <p class="cathalog-item__price">$25.00</p><a class="cathalog-item__link-feedback" href="#">Оставить отзыв</a>
-          </li>
-          <li class="cathalog-item">
-            <div class="cathalog-item__pink-hue"><a class="cathalog-item__link-button" href="#">View</a>
-            </div>
-                  <picture class="cathalog-item__img">
-                    <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image2_desk.webp 1x, img/wx2/image2_desk.webp 2x, img/wx3/image2_desk.webp 3x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image2_tab.webp 1x, img/wx2/image2_tab.webp 2x, img/wx3/image2_tab.webp 3x">
-                    <source type="image/webp" srcset="img/wx1/image2_mob.webp 1x, img/wx2/image2_mob.webp 2x, img/wx3/image2_mob.webp 3x">
-                    <source media="(min-width: 1220px)" srcset="img/image2_desk.jpg">
-                    <source media="(min-width: 768px)" srcset="img/image2_tab.jpg"><img class="image" src="img/image2_mob.jpg">
-                  </picture>
-            <h3 class="cathalog-item__title">Simple white clock</h3>
-            <p class="cathalog-item__price">$25.00</p><a class="cathalog-item__link-feedback" href="#">Оставить отзыв</a>
-          </li>
-          <li class="cathalog-item">
-            <div class="cathalog-item__pink-hue"><a class="cathalog-item__link-button" href="#">View</a>
-            </div>
-                  <picture class="cathalog-item__img">
-                    <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image2_desk.webp 1x, img/wx2/image2_desk.webp 2x, img/wx3/image2_desk.webp 3x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image2_tab.webp 1x, img/wx2/image2_tab.webp 2x, img/wx3/image2_tab.webp 3x">
-                    <source type="image/webp" srcset="img/wx1/image2_mob.webp 1x, img/wx2/image2_mob.webp 2x, img/wx3/image2_mob.webp 3x">
-                    <source media="(min-width: 1220px)" srcset="img/image2_desk.jpg">
-                    <source media="(min-width: 768px)" srcset="img/image2_tab.jpg"><img class="image" src="img/image2_mob.jpg">
-                  </picture>
-            <h3 class="cathalog-item__title">Simple white clock</h3>
-            <p class="cathalog-item__price">$25.00</p><a class="cathalog-item__link-feedback" href="#">Оставить отзыв</a>
-          </li>
-          <li class="cathalog-item">
-            <div class="cathalog-item__pink-hue"><a class="cathalog-item__link-button" href="#">View</a>
-            </div>
-                  <picture class="cathalog-item__img">
-                    <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image2_desk.webp 1x, img/wx2/image2_desk.webp 2x, img/wx3/image2_desk.webp 3x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image2_tab.webp 1x, img/wx2/image2_tab.webp 2x, img/wx3/image2_tab.webp 3x">
-                    <source type="image/webp" srcset="img/wx1/image2_mob.webp 1x, img/wx2/image2_mob.webp 2x, img/wx3/image2_mob.webp 3x">
-                    <source media="(min-width: 1220px)" srcset="img/image2_desk.jpg">
-                    <source media="(min-width: 768px)" srcset="img/image2_tab.jpg"><img class="image" src="img/image2_mob.jpg">
-                  </picture>
-            <h3 class="cathalog-item__title">Simple white clock</h3>
-            <p class="cathalog-item__price">$25.00</p><a class="cathalog-item__link-feedback" href="#">Оставить отзыв</a>
-          </li>
-          <li class="cathalog-item">
-            <div class="cathalog-item__pink-hue"><a class="cathalog-item__link-button" href="#">View</a>
-            </div>
-                  <picture class="cathalog-item__img">
-                    <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image2_desk.webp 1x, img/wx2/image2_desk.webp 2x, img/wx3/image2_desk.webp 3x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image2_tab.webp 1x, img/wx2/image2_tab.webp 2x, img/wx3/image2_tab.webp 3x">
-                    <source type="image/webp" srcset="img/wx1/image2_mob.webp 1x, img/wx2/image2_mob.webp 2x, img/wx3/image2_mob.webp 3x">
-                    <source media="(min-width: 1220px)" srcset="img/image2_desk.jpg">
-                    <source media="(min-width: 768px)" srcset="img/image2_tab.jpg"><img class="image" src="img/image2_mob.jpg">
-                  </picture>
-            <h3 class="cathalog-item__title">Simple white clock</h3>
-            <p class="cathalog-item__price">$25.00</p><a class="cathalog-item__link-feedback" href="#">Оставить отзыв</a>
-          </li>
-          <li class="cathalog-item">
-            <div class="cathalog-item__pink-hue"><a class="cathalog-item__link-button" href="#">View</a>
-            </div>
-                  <picture class="cathalog-item__img">
-                    <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image2_desk.webp 1x, img/wx2/image2_desk.webp 2x, img/wx3/image2_desk.webp 3x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image2_tab.webp 1x, img/wx2/image2_tab.webp 2x, img/wx3/image2_tab.webp 3x">
-                    <source type="image/webp" srcset="img/wx1/image2_mob.webp 1x, img/wx2/image2_mob.webp 2x, img/wx3/image2_mob.webp 3x">
-                    <source media="(min-width: 1220px)" srcset="img/image2_desk.jpg">
-                    <source media="(min-width: 768px)" srcset="img/image2_tab.jpg"><img class="image" src="img/image2_mob.jpg">
-                  </picture>
-            <h3 class="cathalog-item__title">Simple white clock</h3>
-            <p class="cathalog-item__price">$25.00</p><a class="cathalog-item__link-feedback" href="#">Оставить отзыв</a>
-          </li>
-          <li class="cathalog-item">
-            <div class="cathalog-item__pink-hue"><a class="cathalog-item__link-button" href="#">View</a>
-            </div>
-                  <picture class="cathalog-item__img">
-                    <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image2_desk.webp 1x, img/wx2/image2_desk.webp 2x, img/wx3/image2_desk.webp 3x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image2_tab.webp 1x, img/wx2/image2_tab.webp 2x, img/wx3/image2_tab.webp 3x">
-                    <source type="image/webp" srcset="img/wx1/image2_mob.webp 1x, img/wx2/image2_mob.webp 2x, img/wx3/image2_mob.webp 3x">
-                    <source media="(min-width: 1220px)" srcset="img/image2_desk.jpg">
-                    <source media="(min-width: 768px)" srcset="img/image2_tab.jpg"><img class="image" src="img/image2_mob.jpg">
-                  </picture>
-            <h3 class="cathalog-item__title">Simple white clock</h3>
-            <p class="cathalog-item__price">$25.00</p><a class="cathalog-item__link-feedback" href="#">Оставить отзыв</a>
-          </li>
-        </ul>
-      </main>
-      <nav class="cathalog__breadcrumbs"><a class="cathalog__breadcrumbs-item cathalog__breadcrumbs-item_active" href="#">1</a><a class="cathalog__breadcrumbs-item" href="#">2</a><a class="cathalog__breadcrumbs-item" href="#">3</a><a class="cathalog__breadcrumbs-item" href="#">4</a><span>...</span><a class="cathalog__breadcrumbs-item" href="#">14</a></nav>
-    </div>
+            <form class="good_info__form">
+              <div class="good_info__form_review good_info__form_box"><span class="good_info__form_txt">Your Review *</span>
+                <textarea class="good_info__form_textarea good_info__form_input" id="textInput" rows="20" required placeholder="Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты."></textarea>
+              </div>
+              <div class="good_info__form_name good_info__form_box"><span class="good_info__form_txt">Name*</span>
+                <input class="good_info__form_name_input good_info__form_input" id="nameInput" type="text" required placeholder="Анна Тепликова">
+              </div>
+              <div class="good_info__form_email good_info__form_box"><span class="good_info__form_txt">E-mail*</span>
+                <input class="good_info__form_email_input good_info__form_input" type="text" required placeholder="atep@gmail.com">
+              </div>
+              <div class="good_info__form_btn_wrap">
+                <input class="good_info__form_btn" id="addButton" type="submit" value="Добавить коментарий">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__wrapper">
         <nav class="footer__item footer__item--menu">

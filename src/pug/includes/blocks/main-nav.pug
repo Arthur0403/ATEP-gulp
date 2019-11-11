@@ -35,19 +35,19 @@ nav.header__item.main-nav
 							+link('main-nav__submenu-link main-nav__submenu-link--title', 'Одежда')
 						each val in ['Платья','Блузки','Футболки','Брюки','Юбки']
 							li.main-nav__submenu-item
-								+link('main-nav__submenu-link', ''+val)
+								+link('main-nav__submenu-link', ''+val, href='good.html')
 					ul.main-nav__column
 						li.main-nav__submenu-item
 							+link('main-nav__submenu-link main-nav__submenu-link--title', 'Обувь')
 						each val in ['Кроссовки','Кеды','Туфли','Балетки','Сланцы']
 							li.main-nav__submenu-item
-								+link('main-nav__submenu-link', ''+val)
+								+link('main-nav__submenu-link', ''+val, href='good.html')
 					ul.main-nav__column
 						li.main-nav__submenu-item
 							+link('main-nav__submenu-link main-nav__submenu-link--title', 'Аксессуары')
 						each val in ['Часы','Серьги','Кольца','Ожерелье','Поло']
 							li.main-nav__submenu-item
-								+link('main-nav__submenu-link', ''+val)
+								+link('main-nav__submenu-link', ''+val, href='good.html')
 		li.main-nav__item.main-nav__item--submenu
 			span.main-nav__submenu--mobile.link-him.arrow
 			if(cathalogHtml)
@@ -67,17 +67,17 @@ nav.header__item.main-nav
 							+link('main-nav__submenu-link main-nav__submenu-link--title', 'Одежда')
 						each val in ['Куртки','Рубашки','Футболки','Брюки','Шорты']
 							li.main-nav__submenu-item
-								+link('main-nav__submenu-link', ''+val)
+								+link('main-nav__submenu-link', ''+val, href='good.html')
 					ul.main-nav__column
 						li.main-nav__submenu-item
 							+link('main-nav__submenu-link main-nav__submenu-link--title', 'Обувь')
 						each val in ['Кроссовки','Кеды','Туфли','Ботинки','Сланцы']
 							li.main-nav__submenu-item
-								+link('main-nav__submenu-link', ''+val)
+								+link('main-nav__submenu-link', ''+val, href='good.html')
 					ul.main-nav__column
 						li.main-nav__submenu-item
 							+link('main-nav__submenu-link main-nav__submenu-link--title', 'Аксессуары')
 						each val in ['Часы','Ремни','Кольца','Перчатки','Фуражки']
 							li.main-nav__submenu-item
-								+link('main-nav__submenu-link', ''+val)
+								+link('main-nav__submenu-link', ''+val, href='good.html')
 		+menuLookbookBlog('main-nav__item', 'main-nav__link')

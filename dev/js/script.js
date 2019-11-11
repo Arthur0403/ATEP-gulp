@@ -290,3 +290,42 @@ window.addEventListener('keydown', function(event) {
 		}
 	}
 });
+
+window.onload = function () {
+  document.querySelector('.good_info__btns').addEventListener('click', funcTabs);
+
+    function funcTabs(event) {
+    console.log(event);
+    if (event.target.className == 'good_info__btn'){
+      var dataTab = event.target.getAttribute('data-tab');
+      var tabH = document.getElementsByClassName('good_info__btn');
+      for(var i = 0; i < tabH.length; i++){
+        tabH[i].classList.remove('active');
+      }
+      event.target.classList.add('active');
+
+      var tabBody = document.getElementsByClassName('tab-block');
+
+      function fadeIn(tabBody) {
+        var opacity = 0.01;
+        tabBody.style.opacity = 0.01;
+        tabBody.style.display = "block";
+        var timer = setInterval(function() {
+          if(opacity >= 1) {
+            clearInterval(timer);
+          }
+          tabBody.style.opacity = opacity;
+            opacity += opacity * 0.1;
+        }, 10);
+      }
+
+      for (var i = 0; i < tabBody.length; i++){
+        if (dataTab == i) {
+          fadeIn(tabBody[i]);
+        }else {
+          tabBody[i].style.display = 'none';
+        }
+      }
+    }
+  }
+}

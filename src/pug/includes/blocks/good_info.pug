@@ -1,0 +1,11 @@
+section.good_info.good_margin
+
+	.good_info__btns
+		button.active.good_info__btn(data-tab='0') Описание
+		button.good_info__btn(data-tab='1') Комментарии
+		button.good_info__btn(data-tab='2') Оставить комментарий
+
+	.good_info__content
+		include good_info__details.pug
+		include good_info__review_wrap.pug
+		include good_info__form_wrap.pug
